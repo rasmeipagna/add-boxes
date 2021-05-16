@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html, body{
+  height: max-content;
+  min-height:100vh;
+  font-family: 'Roboto', sans-serif !important;
+  background: #e5e5e5;
+}
+
+.section{
+  height: 100%;
+  position: relative;
+}
+
+#boxes{
+  width: 100%;
+  max-width: 450px;
+}
+
+.box{
+  padding: 0rem !important;
+}
+
+.box-head{
+  display: flex;
+  padding: 15px 25px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.box .box-head svg{
+  width: 20px;
+  fill: #fdd02d;
+  margin-right: 15px;
+}
+
+.box .title{
+  text-transform: uppercase;
+}
+
+.box svg path:nth-child(2){
+  fill: #fdb82a;
+}
+
+.box-content{
+  padding: 15px 25px;
+}
+
+.box-content svg{
+  width: 20px;
+  margin-right: 10px;
+}
+
+.box-content .link{
+  padding: 10px 0px;
+  display: flex;
+  text-transform: capitalize;
+  font-weight: bold;
+  fill: rgba(253,121,45,1);
+}
+
+.box-content .link-text{
+  color: rgba(253,121,45,1);
+}
+
+#boxes button{
+  width: max-content;
+  margin: 0 30%;
+  padding: 20px 30px;
+  background: linear-gradient(90deg, rgba(195,78,50,1) 0%, rgba(253,121,45,1) 100%);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#boxes button:hover{
+  transform: translateY(-2px);
+  transition-duration: 0.3s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
