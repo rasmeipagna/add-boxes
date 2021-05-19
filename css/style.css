@@ -1,90 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-html, body{
-  height: max-content;
-  min-height:100vh;
-  font-family: 'Roboto', sans-serif !important;
-  background: #e5e5e5;
-}
-
-.section{
+html{
   height: 100%;
-  position: relative;
+  font-family: Helvetica;
 }
 
-#boxes{
+body{
+  overflow:scroll;
   width: 100%;
-  max-width: 450px;
-}
-.box{
-  padding: 0rem !important;
-}
-
-.box-head{
+  height:100%;
+  background-color: #f0f3f7;
   display: flex;
-  padding: 15px 25px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid lightgrey;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
 }
 
-.box .box-head svg{
-  width: 20px;
-  fill: #fdd02d;
-  margin-right: 15px;
-}
-
-.box .title{
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.box svg path:nth-child(2){
-  fill: #fdb82a;
-}
-
-.box-content{
-  padding: 15px 25px;
-}
-
-.box-content svg{
-  width: 20px;
-  margin-right: 10px;
-}
-
-.box-content .link{
-  padding: 10px 0px;
+.outerbox {
   display: flex;
-  text-transform: capitalize;
-  font-weight: bold;
-  fill: rgba(253,121,45,1);
-}
-.box-content .link:hover{
-  padding-left: 30px;
-  transition:1s;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.box-content .link-text{
-  color: rgba(253,121,45,1);
-  text-decoration:none;
+.box {
+  background-color: white;
+  border-radius: 3px;
+  max-width: 475px;
 }
 
-#boxes button{
-  width: max-content;
-  margin: 5% 30%;
+.box_title {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: solid 1px #f0f3f7;
+  font-weight: 700;
+}
+
+.box_body {
+  padding: 30px 30px 0 30px;
+}
+
+.box_body_link {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: #ea7a58;
+  padding: 20px 0 30px 0;
+  font-weight: 700;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
+  margin-right: 20px;
+}
+
+.svg_arrow {
+  fill: #ea7a58;
+}
+
+.outerbox_button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #ea7a58;
   padding: 20px 30px;
-  background: linear-gradient(90deg, rgba(195,78,50,1) 0%, rgba(253,121,45,1) 100%);
+  border: none;
+  border-radius: 3px;
   color: white;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 700;
+  margin: 30px;
 }
 
-#boxes button:hover{
-  font-weight:500;
-  background:white;
-  transition:1s;
-  color:#fd7933;
-  transform: translateY(-5px);
-  transition-duration: 0.3s;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+button:hover {
+  background-color: white;
+  border: solid 1px;
+  border-color: #ea7a58;
+  color: #ea7a58;
+}
+
+.addedblock{
+  margin-top: 30px;
+}
+
+.box_body_link_crowd{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: #23339b;
+  padding: 20px 0 30px 0;
+  font-weight: 700;
+}
+
+.svg_arrow_crowd{
+   fill: #23339b;
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    margin: 10px;
+  }
 }
